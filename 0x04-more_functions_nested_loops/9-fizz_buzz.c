@@ -9,7 +9,7 @@ int main(void)
 	int i;
 
 	i = 1;
-	while (i < p)
+	while (i <= p)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
