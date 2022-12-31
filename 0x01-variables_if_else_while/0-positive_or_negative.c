@@ -2,12 +2,11 @@
 #include <time.h>
 #include <stdlib.h>
 
-/*
+/**
  * main - gat a random number and print the number
  * and if it is positive, negative, or zero
- * Return: always 0
+ * Return: Always 0.
  */
-
 int main(void)
 {
 	int n;
