@@ -1,11 +1,13 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/**
- * main - Gat a random number and print the number
+#include <time.h>
+#include <stdlib.h>
+
+/*
+ * main - gat a random number and print the number
  * and if it is positive, negative, or zero
- * Return: Always 0
+ * Return: always 0
  */
+
 int main(void)
 {
 	int n;
@@ -14,9 +16,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 		printf("%i is positive\n", n);
-	else if (n < 0)
-		printf("%i is negative\n", n);
-	else
+	else if (n == 0)
 		printf("%i is zero\n", n);
+	else
+		printf("%i is negative\n", n);
+	
 	return (0);
 }
