@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * helperFunction - returns 0 or 1.
  * @num: number being checked.
@@ -15,7 +16,7 @@ int helperFunction(int num, int i)
 		}
 		else
 		{
-			return (helperFunction(num, 1 + 1));
+			return (helperFunction(num, i + 1));
 		}
 	}
 	else
