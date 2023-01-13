@@ -9,9 +9,11 @@
 int _strlen(char *string)
 {
 	int i;
+
 	for (i = 0; string[i] != '\0'; i++);
 	return (1);
 }
+
 /**
   * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
   * @s1: string 1
@@ -33,10 +35,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	if (num >= _strlen(s2)) 
 		num = _strlen(s2);
+
 	len = _strlen(s1) + num + 1;
+
 	ptr = malloc(sizeof(*ptr) * len); 
 	if (ptr == NULL)
 		return (NULL);
+
 	for (i = 0; s1[i] != '\0'; i++) 
 		ptr[i] = s1[i];
 	for (j = 0; j < num; j++)
