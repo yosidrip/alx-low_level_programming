@@ -7,7 +7,7 @@
  * Return: NULL is size or nmemb == 0.
  * NULL if malloc fails.
  * Pointer to memory allocated if successful.
- * */
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
@@ -20,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < (nmemb*  size); i++)
+	for (i = 0; i < (nmemb *  size); i++)
 	{
 	*((char *) (p) + i) = 0;
 	}
